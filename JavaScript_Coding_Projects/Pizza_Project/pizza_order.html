@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/pizza_order.css">
+    <title>Pizza Order</title>
+</head>
+<body>
+    <h1> Mollie's Pizza: </h1>
+    <h2> Put in your order here!</h2>
+    <div class="options">
+        <div class="frame1">
+            <h1>Pick a Size:</h1>
+            <br>
+            <input class="size trial" type="radio" name="size" value="small" checked> Personal<br>
+            <input class="size" type="radio" name="size" value="medium"> Medium<br>
+            <input class="size" type="radio" name="size" value="large"> Large<br>
+            <input class="size" type="radio" name="size" value="xlarge"> Extra Large<br>
+        </div>
+
+        <div class="frame1">
+            <h1>Pick your meats:</h1>
+            <br>
+            <input class="meat" type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+            <input class="meat" type="checkbox" name="meat" value="Sausage"> Sausage<br>
+            <input class="meat" type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+            <input class="meat" type="checkbox" name="meat" value="Beef"> Ground Beef<br>
+            <input class="meat" type="checkbox" name="meat" value="Anchovy"> Anchovy<br>
+            <input class="meat" type="checkbox" name="meat" value="Chicken"> Chicken<br>
+        </div>
+
+        <div class="frame1">
+            <h1>Pick your cheese:</h1>
+            <br>
+            <input class="cheese" type="radio" name="cheese" value="regular" checked> Regular<br>
+            <input class="cheese" type="radio" name="cheese" value="nocheese"> No Cheese<br>
+            <input class="cheese" type="radio" name="cheese" value="extracheese"> Extra Cheese<br>
+        </div>
+
+        <div class="frame1">
+            <h1>Pick your crust:</h1>
+            <br>
+            <input class="crust" type="radio" name="crust" value="plain" checked> Plain Crust<br>
+            <input class="crust" type="radio" name="crust" value="garlic"> Garlic Butter Crust<br>
+            <input class="crust" type="radio" name="crust" value="cheese"> Cheese Stuffed Crust<br>
+            <input class="crust" type="radio" name="crust" value="spicy"> Spicy Crust<br>
+            <input class="crust" type="radio" name="crust" value="house"> House Special Crust<br>
+        </div>
+
+        <div class="frame1">
+            <h1>Pick your sauce:</h1>
+            <br>
+            <input class="sauce" type="radio" name="sauce" value="marinara" checked> Marinara Sauce<br>
+            <input class="sauce" type="radio" name="sauce" value="white"> White Sauce<br>
+            <input class="sauce" type="radio" name="sauce" value="bbq"> Barbeque Sauce<br>
+            <input class="sauce" type="radio" name="sauce" value="nosauce"> No Sauce<br>
+        </div>
+        
+        <div class="frame1">
+            <h1>Pick your veggies:</h1>
+            <input class="veggies" type="checkbox" name="veggies" value="Tomatoes"> Tomatoes<br>
+            <input class="veggies" type="checkbox" name="veggies" value="Onions"> Onions<br>
+            <input class="veggies" type="checkbox" name="veggies" value="Olives"> Olives<br>
+            <input class="veggies" type="checkbox" name="veggies" value="Green Peppers"> Green Peppers<br>
+            <input class="veggies" type="checkbox" name="veggies" value="Mushrooms"> Mushrooms<br>
+            <input class="veggies" type="checkbox" name="veggies" value="Pineapple"> Pineapple<br>
+            <input class="veggies" type="checkbox" name="veggies" value="Spinach"> Spinach<br>
+            <input class="veggies" type="checkbox" name="veggies" value="Jalapenos"> Jalapenos<br>
+        </div>
+        <button onclick="displayReceipt()">Submit Order</button>
+    </div>        
+    <div>
+        <div class="receipt">
+            <h2>Receipt</h2>
+            <div class="items">
+                <p id=size-receipt></p>
+                <p id=meat-receipt></p>
+                <p id=cheese-receipt></p>
+                <p id=crust-receipt></p>
+                <p id=sauce-receipt></p>
+                <p id=veggie-receipt></p> 
+                <p id=total></p>
+            </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="pizza_order.js"></script>
+   
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

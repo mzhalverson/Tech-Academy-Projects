@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    background-color: burlywood;
+}
+
+.options {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 650px;
+    height: 650px;
+}
+
+.frame1{
+    margin:4px auto;
+    margin-left: 8px;
+    margin-left: 8px;
+    float: left;
+    height: 300px; width: 200px; 
+    border: 2px solid #000; 
+    border-radius: 2%; 
+    position: relative;
+}
+
+.frame1 h1 {
+    text-size-adjust: 80%;
+}
+
+input[type="radio"] {
+    float: left;
+    padding: 2px;
+}
+
+input[type="checkbox"] {
+    float: left;
+    padding: 2px;
+}
+
+input[type="radio"] p {
+    text-align: left;
+}
+
+
+input[type="radio"] p:hover {
+    font-weight: bold; 
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.receipt {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 650px;
+    border: 1px solid #000; 
+}
+
+.items {
+    text-align: left;
+    padding-left: 50px;
+}
+
+
+#total {
+    font-weight: bold;
+}
