@@ -104,10 +104,43 @@
         </div>
     </div>
 
+
+    <!-- Puzzle SECTION -->
+    <div class="Row" id="Puzzle"> <!-- CONTACT IMAGE, LEFT COLUMN -->
+        <div class="Column_1">
+            <h1>Logic Puzzle</h1>
+            <p>
+                Alex knows 5 women: Jane, Kelly, Laura, Maria and Nancy.
+                The women are in two age brackets: 3 women are under 30 and 2 women are over 30.
+                2 women are therapists and the other 3 women are engineers.
+                Jane and Laura are in the same age bracket. 
+                Maria and Nancy are in different age brackets. 
+                Kelly and Nancy have the same occupation.
+                Laura and Maria have different occupations.
+                Of the 5 women, Alex will mary the therapist over 30. 
+                Who will Alex marry?
+            </p>
+            <div class=puzzle-answers>
+                <input type="radio" name="puzzle1-ans" value="Jane" checked> Jane<br>
+                <input type="radio" name="puzzle1-ans" value="Kelly"> Kelly<br>
+                <input type="radio" name="puzzle1-ans" value="Laura"> Laura<br>
+                <input type="radio" name="puzzle1-ans" value="Maria"> Maria<br>
+                <input type="radio" name="puzzle1-ans" value="Nancy"> Nancy<br>   
+                <button onclick="displayResponse()">Check Answer</button>   
+                <p id=answer-response></p> 
+            </div>     
+        </div>
+
+        <div class="Column_3"> <!-- CONTACT FORM, RIGHT "COLUMN" -->
+
+            <img src="Stylesheet/Images/Contact.jpg" alt="Contact_Image">
+        </div>
+    </div>
+
 <!-- FOOTER SECTION -->
     <footer>
         <p>
-            <center>&copy; Prosper Consulting Inc., <a href=""></a></center>
+            <center>&copy; Zechlin Labs <a href=""></a></center>
         </p>
     </footer>
 
@@ -128,7 +161,7 @@
 
 
 
-
+    <script src="js/index.js"></script>
     <script src="assets/js/docs.js"></script>
     </body>
 

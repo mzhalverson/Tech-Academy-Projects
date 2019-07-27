@@ -44,6 +44,7 @@ body {
     bottom: 0; /* This ensures no space between the ede of the video and the edge of the page */
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
     z-index: -1;
+    filter: grayscale(50%);
 }
 
 /* Text over the video */
@@ -65,7 +66,7 @@ body {
     width: 50%; /* This ensures one column takes up half the page width */
     padding: 10px;
     padding-top: 2%; /* This ensures there is space between the top of the column and our headings */
-    height: 400px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
+    height: 500px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
     background-color: #f2f2f2;
 }
 
@@ -73,8 +74,8 @@ body {
     float: left;
     width: 50%; /* This ensures one column takes up half the page width */
     padding: 10px;
-    padding-top: 2%; /* This ensures there is space between the top of the column and our headings */
-    height: 400px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
+    padding-top: 5%; /* This ensures there is space between the top of the column and our headings */
+    height: 500px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
     background-color: #4d4d4d;
 }
 
@@ -82,8 +83,8 @@ body {
 	float: left;
 	width: 50%;
 	padding: 10px;
-	padding-top: 2%;
-	height: 400px;
+	padding-top: 5%;
+	height: 500px;
 	background-color: #4d4d4d;
 }
 
@@ -158,11 +159,12 @@ input[type=submit] { /* This covers the submit button for the contact form */
 	background-color: black;
 	color: white;
 	font-weight: bold;
-	padding: 12px 20px;
+    padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	display: block;
+    display: block;
+    margin-top: auto;
 	margin-left: auto;
 	margin-right: auto; 
 	font-family: Perpetua, Rockwell Extra Bold;
@@ -181,7 +183,10 @@ input[type=submit]:hover {
 form {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     font-family: Perpetua, Rockwell Extra Bold;
 }
 
@@ -210,8 +215,32 @@ footer {
 }
 
 
+.puzzle-answers {
+    padding-left: 45%;
+    padding-bottom: 5%;
+    padding-top: -20px;
+    margin-top: -5px;
+}
 
+button {
+    background-color: black;
+	color: white;
+	font-weight: bold;
+    padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    display: block;
+    margin-top: auto;
+	margin-left: auto;
+	margin-right: auto; 
+	font-family: Perpetua, Rockwell Extra Bold;
+}
 
-
-
-
+button:hover {
+    background-color: white; /* Makes the background turn white when hovered over */
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1); /* Makes the button increase 1.5 times in size */
+    transition: transform 0.5s; /* Makes the transform effect last 1.5 seconds from start to finish */
+}
